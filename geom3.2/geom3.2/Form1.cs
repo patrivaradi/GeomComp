@@ -64,6 +64,21 @@ namespace geom3._2
             gfx = pictureBox1.CreateGraphics();
         }
 
-       
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PointF[] points = new PointF[3];
+            string[] input = textBox1.Text.Split(new[] { ' ' });
+            points[0] = new PointF((int.Parse(input[0])), int.Parse(input[1]));
+
+            input = textBox2.Text.Split(new[] { ' ' });
+            points[1] = new PointF((int.Parse(input[0])), int.Parse(input[1]));
+
+            input = textBox3.Text.Split(new[] { ' ' });
+            points[2] = new PointF((int.Parse(input[0])), int.Parse(input[1]));
+
+            gfx.DrawLine(new Pen(Color.Blue), points[2], new PointF((points[0].X + points[1].X) / 2, (points[0].Y + points[1].Y) / 2));
+            gfx.DrawLine(new Pen(Color.Blue), points[0], new PointF((points[1].X + points[2].X) / 2, (points[1].Y + points[2].Y) / 2));
+            gfx.DrawLine(new Pen(Color.Blue), points[1], new PointF((points[0].X + points[2].X) / 2, (points[0].Y + points[2].Y) / 2));
+        }
     }
 }

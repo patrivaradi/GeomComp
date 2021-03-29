@@ -38,6 +38,7 @@ namespace geom3._2
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@ namespace geom3._2
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(618, 295);
+            this.button2.Location = new System.Drawing.Point(618, 267);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 28);
             this.button2.TabIndex = 1;
@@ -122,11 +123,22 @@ namespace geom3._2
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(619, 321);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(90, 28);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "inaltime";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -156,6 +168,7 @@ namespace geom3._2
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button3;
     }
 }
 
